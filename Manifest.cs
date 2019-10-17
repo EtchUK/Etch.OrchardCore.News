@@ -6,5 +6,11 @@ using OrchardCore.Modules.Manifest;
     Description = "Configures content definitions for news.",
     Name = "News",
     Version = "0.0.1",
-    Website = "https://etchuk.com"
+    Website = "https://etchuk.com",
+    Dependencies = new string[] {
+        "Etch.OrchardCore.Blocks.EditorJS",
+        "OrchardCore.ContentFields",
+        "OrchardCore.Media",
+        "OrchardCore.Taxonomies"
+    }
 )]

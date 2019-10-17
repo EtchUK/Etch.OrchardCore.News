@@ -1,0 +1,16 @@
+<article>
+    <section class="section section--wide padding--bottom padding--top-large text--align-center">
+        <div class="section__content">
+            <h1 class="margin--bottom">{{ Model.ContentItem | display_text }}</h1>
+            <p>{{ "By" | t }} <strong>{{ Model.ContentItem.Content.NewsPost.Author.Text }}</strong> {{ "on" | t }} {{ Model.ContentItem.CreatedUtc | local | date: "%d/%m/%Y" }}
+        </div>
+    </section>
+
+    <section class="section padding--top-large">
+        <div class="section__content">
+            {{ Model.Content | shape_render }}
+        </div>
+    </section>
+</article>
+
+{{ Model.AfterContent | shape_render }}

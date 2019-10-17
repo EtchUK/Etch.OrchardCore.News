@@ -1,0 +1,43 @@
+{
+    "TitlePart": [
+        {
+            "contentType": ["Homepage"],
+            "place": "-"
+        }
+    ],
+    "BlockField": [
+        {
+            "contentType": "NewsPost",
+            "displayType": "Detail",
+            "place": "Content:5"
+        }
+    ],
+    "ContentPickerField": [
+        {
+            "contentType": "NewsPost",
+            "displayType": "Detail",
+            "place": "AfterContent:10"
+        }
+    ],
+    "MediaField": [
+        {
+            "contentType": "NewsPost",
+            "displayType": "Detail",
+            "place": "-"
+        }
+    ],
+    "TaxonomyField": [
+        {
+            "contentType": "NewsPost",
+            "displayType": "Detail",
+            "place": "Content:10"
+        }
+    ],
+    "TextField": [
+        {
+            "contentType": "NewsPost",
+            "displayType": "Detail",
+            "place": "-"
+        }
+    ]
+}
