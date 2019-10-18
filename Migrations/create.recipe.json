@@ -203,10 +203,10 @@
             },
             {
               "FieldName": "TextField",
-              "Name": "ThumnailAlt",
+              "Name": "ThumbnailAlt",
               "Settings": {
                 "ContentPartFieldSettings": {
-                  "DisplayName": "Thumnail Alternate Text",
+                  "DisplayName": "Thumbnail Alternate Text",
                   "Position": "2"
                 },
                 "TextFieldSettings": {
