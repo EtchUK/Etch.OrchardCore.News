@@ -6,7 +6,9 @@
         <img src="{{ thumbnailPath | asset_url | resize_url: width:350, height:200, mode:'crop' }}" alt="{{ Model.ContentItem.Content.NewsPost.ThumbnailAlt }}" />
     </picture>
     <div class="card__body">
-        <h2 class="margin--bottom-small">{{ Model.ContentItem | display_text }}</h2>
+        <a class="link--breakout" href="{{ Model.ContentItem | display_url }}">
+            <h3 class="margin--bottom-small">{{ Model.ContentItem | display_text }}</h3>
+        </a>
         <p class="margin--bottom display--block">
             {% if isPublished %}
                 {{ Model.ContentItem.CreatedUtc | local | date: "%d/%m/%Y" }}
@@ -14,6 +16,5 @@
                 {{ "Draft" | t }}
             {% endif %}
         </p>
-        <p><a class="btn btn--secondary link--breakout" href="{{ Model.ContentItem | display_url }}">{{ "Read more" | t }}</a></p>
     </div>
 </div>
