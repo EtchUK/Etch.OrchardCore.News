@@ -5,7 +5,7 @@ using OrchardCore.Modules.Manifest;
     Category = "Content",
     Description = "Configures content definitions for news.",
     Name = "News",
-    Version = "0.1.2",
+    Version = "0.1.3",
     Website = "https://etchuk.com",
     Dependencies = new string[] {
         "Etch.OrchardCore.Blocks.EditorJS",
