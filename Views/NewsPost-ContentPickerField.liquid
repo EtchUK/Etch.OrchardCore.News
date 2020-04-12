@@ -1,5 +1,7 @@
 {% assign contentItems = Model.ContentItemIds | content_item_id %}
+{% assign count = Model.ContentItemIds | size %}
 
+{% if count > 0 %}
 <section class="section section--wide padding--top-large">
     <div class="section__content">
         <h3 class="padding--bottom-large">{{ "Further reading" | t }}</h3>
@@ -13,3 +15,4 @@
         </ul>
     </div>
 </section>
+{% endif %}
