@@ -23,7 +23,7 @@
           "PublishedUtc": "2019-10-16T22:49:37.9950053Z",
           "CreatedUtc": "2019-10-16T22:46:34.7511607Z",
           "Owner": "[js: parameters('AdminUsername')]",
-          "Author": null,
+          "Author": "[js: parameters('AdminUsername')]",
           "TitlePart": {
             "Title": "Tags"
           },
@@ -123,9 +123,6 @@
             },
             "Thumbnail": {
               "Paths": ["News/unsplash-1444090542259-350w.jpg"]
-            },
-            "Author": {
-              "Text": "Etch Play"
             },
             "ThumbnailAlt": {
               "Text": "Description of image"

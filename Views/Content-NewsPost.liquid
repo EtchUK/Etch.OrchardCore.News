@@ -3,7 +3,7 @@
         <div class="section__content">
             <h1 class="margin--bottom">{{ Model.ContentItem | display_text }}</h1>
           <p>
-            {{ "By" | t }} <strong>{{ Model.ContentItem.Content.NewsPost.Author.Text }}</strong> {{ "on" | t }} {{ Model.ContentItem.CreatedUtc | local | date: "%d/%m/%Y" }}
+            {{ "By" | t }} <strong>{{ Model.ContentItem.Author }}</strong> {{ "on" | t }} {{ Model.ContentItem.CreatedUtc | local | date: "%d/%m/%Y" }}
           </p>
         </div>
     </section>
