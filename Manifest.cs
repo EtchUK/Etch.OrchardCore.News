@@ -5,10 +5,10 @@ using OrchardCore.Modules.Manifest;
     Category = "Content",
     Description = "Configures content definitions for news.",
     Name = "News",
-    Version = "0.1.3",
+    Version = "0.2.0",
     Website = "https://etchuk.com",
     Dependencies = new string[] {
-        "Etch.OrchardCore.Blocks.EditorJS",
+        "Etch.OrchardCore.Blocks",
         "OrchardCore.ContentFields",
         "OrchardCore.Media",
         "OrchardCore.Taxonomies"
