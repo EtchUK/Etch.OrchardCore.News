@@ -1,0 +1,21 @@
+﻿@model dynamic
+
+<section class="section">
+    <div class="constrain">
+        <h1>@Model.TaxonomyName</h1>
+
+        @if ((bool)Model.HasItems)
+        {
+        <ul class="list">
+            @foreach (var item in Model.Items)
+            {
+            <li>@await DisplayAsync(item)</li>
+            }
+        </ul>
+        }
+        else
+        {
+            <p class="hint">@T["The list is empty"]</p>
+        }
+    </div>
+</section>

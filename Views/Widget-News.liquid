@@ -1,0 +1,46 @@
+﻿{% assign pageSize = Model.ContentItem.Content.News.PageSize.Value %}
+{% assign fetchCount = pageSize | plus: 1 %}
+
+{% assign page = Request.Query["page"] | first | at_least: 1 %}
+{% assign from = page | times: pageSize | minus: pageSize  | at_least: 0 %}
+
+{% assign articles = Queries.News | query: size: fetchCount, from: from %}
+{% assign pageUrl = Request.PathBase | append: Request.Path %}
+
+<section class="section">
+	<div class="section__content constrain constrain--wide">
+		{% if Model.ContentItem.Content.News.Paging.Value %}
+			<h1>{{ Model.ContentItem | display_title }}</h1>
+		{% else %}
+			<h2>{{ Model.ContentItem | display_title }}</h2>
+		{% endif %}
+
+		<div class="grid grid--gutter-small color--default">
+			{% for item in articles %}
+				{% if forloop.last == false or articles.size <= pageSize %}
+					<div class="grid__item">
+						{{ item | shape_build_display: "Summary" | shape_render }}
+					</div>
+				{% endif %}
+			{% endfor %}
+		</div>
+
+		{% if Model.ContentItem.Content.News.Paging.Value %}
+			<ul class="pager margin--bottom-large">
+				{% if from > 0 %}
+					{% assign prevPage = page | minus: 1 %}
+					<li>
+						<a href="{{ pageUrl | append: "?page=" | append: prevPage }}">{{ "Newer posts" | t}}</a>
+					</li>
+				{% endif %}
+
+				{% if articles.size > pageSize %}
+					{% assign nextPage = page | plus: 1 %}
+					<li>
+						<a href="{{ pageUrl | append: "?page=" | append: nextPage }}">{{ "Older posts" | t }}</a>
+					</li>
+				{% endif %}
+			</ul>
+		{% endif %}
+	</div>
+</section>

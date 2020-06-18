@@ -1,0 +1,28 @@
+﻿{% assign termName = Model.ContentItem | display_text %}
+
+<section class="section">
+	<div class="section__content constrain constrain--wide">
+		<h1 class="padding--bottom-large">{{ termName | capitalize }}</h1>
+
+        {% if Model.ContentItems.size == 1 %}
+            <p>1 post tagged with <strong>{{ termName }}</strong></p>
+        {% else %}
+            <p>{{ Model.ContentItems.size }} posts tagged with <strong>{{ termName }}</strong></p>
+        {% endif %}
+
+        <ul class="grid">
+        {% for item in Model.ContentItems %}
+            <li class="grid__item">
+                {{ item | shape_build_display: "Summary" | shape_render }}
+            </li>
+        {% endfor %}
+        </ul>
+	</div>
+</section>
+
+<section class="section">
+    <div class="section__content">
+        {% shape_pager Model.Pager next_text: 'Next Page', previous_text: 'Previous Page' %}
+        {{ Model.Pager | shape_render }}
+    </div>
+</section>

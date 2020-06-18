@@ -1,7 +1,0 @@
-<ul class="grid">
-{% for item in Model.ContentItems %}
-    <li class="grid__item">
-        {{ item | shape_build_display: "Summary" | shape_render }}
-    </li>
-{% endfor %}
-</ul>

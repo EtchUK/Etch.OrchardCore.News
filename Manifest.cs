@@ -10,7 +10,9 @@ using OrchardCore.Modules.Manifest;
     Dependencies = new string[] {
         "Etch.OrchardCore.Blocks",
         "OrchardCore.ContentFields",
+        "OrchardCore.Lucene",
         "OrchardCore.Media",
+        "OrchardCore.Queries",
         "OrchardCore.Taxonomies"
     }
 )]
