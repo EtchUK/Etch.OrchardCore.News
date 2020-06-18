@@ -1,0 +1,19 @@
+{% assign tags = Model.Field | taxonomy_terms %}
+
+<hr class="margin--bottom-large margin--top-large">
+
+{% if tags | size > 0 %}
+
+<ul class="list list--horizontal-spaced">
+    <li>
+        <strong>{{ "Tags:" | t }}</strong>
+    </li>
+
+    {% for tag in tags %}
+    <li>
+        <a href="{{ tag.ContentItem | display_url }}">{{ tag | display_text }}</a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endif %}

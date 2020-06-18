@@ -1,10 +1,10 @@
 {
-  "name": "Example News Post",
-  "displayName": "Example News Post",
-  "description": "Creates an example news post.",
+  "name": "Example News Posts",
+  "displayName": "Example News Posts",
+  "description": "Creates a few example news posts.",
   "author": "Etch",
   "website": "https://etchuk.com",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "issetuprecipe": false,
   "categories": ["Content"],
   "tags": ["etch"],
@@ -13,15 +13,164 @@
       "name": "content",
       "data": [
         {
+          "ContentItemId": "4b7v26s0hffgjry6d8785nk8ma",
+          "ContentItemVersionId": "4hm0trqgyrvd759xfw1ctcqt40",
+          "ContentType": "NewsPost",
+          "DisplayText": "Example Blog Post #1",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-06-15T22:22:15.4579938Z",
+          "PublishedUtc": "2020-06-15T22:22:15.4627791Z",
+          "CreatedUtc": "2020-06-15T22:22:15.4579938Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "NewsPost": {
+            "Content": {
+              "Data": "{\"time\":1592259735319,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"caption\":\"The image fills the width of its parent.\",\"mediaPath\":\"News/Default/example-news-1280w.jpg\",\"url\":\"/demo/media/News/Default/example-news-1280w.jpg\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.18.0\"}",
+              "Html": null
+            },
+            "Thumbnail": {
+              "Paths": [
+                "News/Default/example-news-400w.jpg"
+              ]
+            },
+            "ThumbnailAlt": {
+              "Text": "Description of image"
+            },
+            "FurtherReading": {
+              "ContentItemIds": []
+            },
+            "Tags": {
+              "TagNames": [
+                "Featured"
+              ],
+              "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
+              "TermContentItemIds": [
+                "4rf9s6d6qtjpas84f52sg2qhc2"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/example-blog-post-1",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "TitlePart": {
+            "Title": "Example Blog Post #1"
+          }
+        },
+        {
+          "ContentItemId": "4dwx6chqkr420sh25me4p3e8mf",
+          "ContentItemVersionId": "4bp5jxdf5z6rhxbg09sn3b3jdt",
+          "ContentType": "NewsPost",
+          "DisplayText": "Example Blog Post #2",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-06-15T22:23:22.3540836Z",
+          "PublishedUtc": "2020-06-15T22:23:22.359008Z",
+          "CreatedUtc": "2020-06-15T22:23:22.3540836Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "NewsPost": {
+            "Content": {
+              "Data": "{\"time\":1592259802241,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"url\":\"/demo/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.18.0\"}",
+              "Html": null
+            },
+            "Thumbnail": {
+              "Paths": [
+                "News/Default/example-news-400w.jpg"
+              ]
+            },
+            "ThumbnailAlt": {
+              "Text": "Description of image"
+            },
+            "FurtherReading": {
+              "ContentItemIds": []
+            },
+            "Tags": {
+              "TagNames": [
+                "Games",
+                "Mobile"
+              ],
+              "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
+              "TermContentItemIds": [
+                "42zsbct55dcvk0sj3xk0jas0dt",
+                "4csvjqamgtan040np9pdgwk3dk"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "blog/example-blog-post-2",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "TitlePart": {
+            "Title": "Example Blog Post #2"
+          }
+        },
+        {
+          "ContentItemId": "4qngemy19tm6q17v6bd78xv5c9",
+          "ContentItemVersionId": "4r5d53sfrtf35zkwcntnzjrz49",
+          "ContentType": "NewsPost",
+          "DisplayText": "Example Blog Post #3",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-06-15T22:40:56.7620791Z",
+          "PublishedUtc": "2020-06-15T22:40:56.7823198Z",
+          "CreatedUtc": "2020-06-15T22:24:14.9135095Z",
+          "Owner": "[js: parameters('AdminUsername')]",
+          "Author": "[js: parameters('AdminUsername')]",
+          "NewsPost": {
+            "Content": {
+              "Data": "{\"time\":1592260856690,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"url\":\"/demo/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.18.0\"}",
+              "Html": null
+            },
+            "Thumbnail": {
+              "Paths": [
+                "News/Default/example-news-400w.jpg"
+              ]
+            },
+            "ThumbnailAlt": {
+              "Text": "Description of image"
+            },
+            "FurtherReading": {
+              "ContentItemIds": []
+            },
+            "Tags": {
+              "TagNames": [
+                "Featured"
+              ],
+              "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
+              "TermContentItemIds": [
+                "4rf9s6d6qtjpas84f52sg2qhc2"
+              ]
+            }
+          },
+          "AutoroutePart": {
+            "Path": "news/example-blog-post-3",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": false,
+            "Absolute": false
+          },
+          "TitlePart": {
+            "Title": "Example Blog Post #3"
+          }
+        },
+        {
           "ContentItemId": "45dmkhfhg1fsese84swhh990we",
-          "ContentItemVersionId": "4amfyp4trwn4bteddf892gf3mg",
+          "ContentItemVersionId": "4rr1rjbkq9rtwv7k1gpyw4nk4y",
           "ContentType": "Taxonomy",
           "DisplayText": "Tags",
           "Latest": true,
           "Published": true,
-          "ModifiedUtc": "2019-10-16T22:48:01.2610654Z",
-          "PublishedUtc": "2019-10-16T22:49:37.9950053Z",
-          "CreatedUtc": "2019-10-16T22:46:34.7511607Z",
+          "ModifiedUtc": "2020-06-15T22:18:11.3792992Z",
+          "PublishedUtc": "2020-06-15T22:18:11.4021793Z",
+          "CreatedUtc": "2019-10-16T21:33:29.8207987Z",
           "Owner": "[js: parameters('AdminUsername')]",
           "Author": "[js: parameters('AdminUsername')]",
           "TitlePart": {
@@ -33,13 +182,13 @@
           "TaxonomyPart": {
             "Terms": [
               {
-                "ContentItemId": "45yjjdb8rr0ts017xw3rafgzdj",
+                "ContentItemId": "4rf9s6d6qtjpas84f52sg2qhc2",
                 "ContentItemVersionId": null,
                 "ContentType": "Tag",
                 "DisplayText": "Featured",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2019-10-16T22:48:01.2671846Z",
+                "ModifiedUtc": "2020-06-15T22:07:08.1226559Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -47,50 +196,29 @@
                 "Tag": {},
                 "TitlePart": {
                   "Title": "Featured"
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
+                },
+                "@WeldedPartSettings": {
+                  "TermPart": {}
+                },
+                "AutoroutePart": {
+                  "Path": "featured",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": false
                 }
               },
               {
-                "ContentItemId": "4pfzjfj77d88sswb8wsx9wcbc4",
-                "ContentItemVersionId": null,
-                "ContentType": "Tag",
-                "DisplayText": "PC",
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-10-16T22:48:06.7811055Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "[js: parameters('AdminUsername')]",
-                "Tag": {},
-                "TitlePart": {
-                  "Title": "PC"
-                }
-              },
-              {
-                "ContentItemId": "433w2nhkmvq4318c6zrp09gn47",
-                "ContentItemVersionId": null,
-                "ContentType": "Tag",
-                "DisplayText": "Mobile",
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2019-10-16T22:48:11.3805797Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "[js: parameters('AdminUsername')]",
-                "Tag": {},
-                "TitlePart": {
-                  "Title": "Mobile"
-                }
-              },
-              {
-                "ContentItemId": "4777svwkr37q92bzrhprnvgywa",
+                "ContentItemId": "42zsbct55dcvk0sj3xk0jas0dt",
                 "ContentItemVersionId": null,
                 "ContentType": "Tag",
                 "DisplayText": "Games",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2019-10-16T22:48:41.0742015Z",
+                "ModifiedUtc": "2020-06-15T22:08:02.6346447Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
@@ -98,58 +226,90 @@
                 "Tag": {},
                 "TitlePart": {
                   "Title": "Games"
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
+                },
+                "@WeldedPartSettings": {
+                  "TermPart": {}
+                },
+                "AutoroutePart": {
+                  "Path": "games",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": false
+                }
+              },
+              {
+                "ContentItemId": "4csvjqamgtan040np9pdgwk3dk",
+                "ContentItemVersionId": null,
+                "ContentType": "Tag",
+                "DisplayText": "Mobile",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-06-15T22:07:36.326528Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "Tag": {},
+                "TitlePart": {
+                  "Title": "Mobile"
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
+                },
+                "@WeldedPartSettings": {
+                  "TermPart": {}
+                },
+                "AutoroutePart": {
+                  "Path": "mobile",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": false
+                }
+              },
+              {
+                "ContentItemId": "4j6c5a5yb9tyh39agvxx6x80mz",
+                "ContentItemVersionId": null,
+                "ContentType": "Tag",
+                "DisplayText": "PC",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2020-06-15T22:07:25.3568361Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "[js: parameters('AdminUsername')]",
+                "Tag": {},
+                "TitlePart": {
+                  "Title": "PC"
+                },
+                "TermPart": {
+                  "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
+                },
+                "@WeldedPartSettings": {
+                  "TermPart": {}
+                },
+                "AutoroutePart": {
+                  "Path": "pc",
+                  "SetHomepage": false,
+                  "Disabled": false,
+                  "RouteContainedItems": false,
+                  "Absolute": false
                 }
               }
             ],
             "TermContentType": "Tag"
-          }
-        },
-        {
-          "ContentItemId": "4zeg1c6y8fakz6w3n2ed9ax652",
-          "ContentItemVersionId": "4ab49wt01xr1hywcy1aqt08xcm",
-          "ContentType": "NewsPost",
-          "DisplayText": "Example Article",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-10-16T22:49:56.2255389Z",
-          "PublishedUtc": "2019-10-16T22:49:56.2869542Z",
-          "CreatedUtc": "2019-10-16T21:43:20.9920307Z",
-          "Owner": "[js: parameters('AdminUsername')]",
-          "Author": "[js: parameters('AdminUsername')]",
-          "NewsPost": {
-            "Content": {
-              "Data": "{\"time\":1571266196169,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"image\",\"data\":{\"url\":\"/demo/media/News/unsplash-1444090542259-2560w.jpg\",\"caption\":\"\",\"stretched\":true}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"The image fills the width of its parent.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.15.0\"}",
-              "Html": null
-            },
-            "Thumbnail": {
-              "Paths": ["News/unsplash-1444090542259-350w.jpg"]
-            },
-            "ThumbnailAlt": {
-              "Text": "Description of image"
-            },
-            "FurtherReading": {
-              "ContentItemIds": ["4zeg1c6y8fakz6w3n2ed9ax652"]
-            },
-            "Tags": {
-              "TermContentItemIds": [
-                "45yjjdb8rr0ts017xw3rafgzdj",
-                "4pfzjfj77d88sswb8wsx9wcbc4",
-                "433w2nhkmvq4318c6zrp09gn47",
-                "4777svwkr37q92bzrhprnvgywa"
-              ],
-              "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
-            }
           },
           "AutoroutePart": {
-            "Path": "news/example-article",
-            "SetHomepage": false
-          },
-          "TitlePart": {
-            "Title": "Example Article"
-          },
-          "ContainedPart": {
-            "ListContentItemId": "4dzdnpafscnp33y8xdz4ch45xt",
-            "Order": 0
+            "Path": "tags",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": true,
+            "Absolute": false
           }
         }
       ]
@@ -158,12 +318,12 @@
       "name": "media",
       "Files": [
         {
-          "SourcePath": "News/unsplash-1444090542259-2560w.jpg",
-          "TargetPath": "News/unsplash-1444090542259-2560w.jpg"
+          "SourcePath": "News/Default/example-news-1280w.jpg",
+          "TargetPath": "News/Default/example-news-1280w.jpg"
         },
         {
-          "SourcePath": "News/unsplash-1444090542259-350w.jpg",
-          "TargetPath": "News/unsplash-1444090542259-350w.jpg"
+          "SourcePath": "News/Default/example-news-400w.jpg",
+          "TargetPath": "News/Default/example-news-400w.jpg"
         }
       ]
     }

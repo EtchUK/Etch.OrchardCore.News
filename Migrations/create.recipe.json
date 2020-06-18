@@ -4,81 +4,59 @@
   "description": "Configure news content definitions.",
   "author": "Etch",
   "website": "https://etchuk.com",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "issetuprecipe": false,
-  "categories": ["Content"],
-  "tags": ["etch"],
+  "categories": [
+    "Content"
+  ],
+  "tags": [
+    "etch"
+  ],
   "steps": [
+    {
+      "name": "content",
+      "data": [
+        {
+          "ContentItemId": "45dmkhfhg1fsese84swhh990we",
+          "ContentItemVersionId": "4rr1rjbkq9rtwv7k1gpyw4nk4y",
+          "ContentType": "Taxonomy",
+          "DisplayText": "Tags",
+          "Latest": true,
+          "Published": true,
+          "ModifiedUtc": "2020-06-15T22:18:11.3792992Z",
+          "PublishedUtc": "2020-06-15T22:18:11.4021793Z",
+          "CreatedUtc": "2019-10-16T21:33:29.8207987Z",
+          "Owner": "etch-play",
+          "Author": "etch-play",
+          "TitlePart": {
+            "Title": "Tags"
+          },
+          "AliasPart": {
+            "Alias": "tags"
+          },
+          "TaxonomyPart": {
+            "Terms": [],
+            "TermContentType": "Tag"
+          },
+          "AutoroutePart": {
+            "Path": "tags",
+            "SetHomepage": false,
+            "Disabled": false,
+            "RouteContainedItems": true,
+            "Absolute": false
+          }
+        }
+      ]
+    },
     {
       "name": "ContentDefinition",
       "ContentTypes": [
-        {
-          "Name": "News",
-          "DisplayName": "News",
-          "Settings": {
-            "ContentTypeSettings": {
-              "Listable": true,
-              "Draftable": true,
-              "Versionable": true,
-              "Securable": true
-            },
-            "FullTextAspectSettings": {}
-          },
-          "ContentTypePartDefinitionRecords": [
-            {
-              "PartName": "News",
-              "Name": "News",
-              "Settings": {
-                "ContentTypePartSettings": {
-                  "Position": "1"
-                }
-              }
-            },
-            {
-              "PartName": "AutoroutePart",
-              "Name": "AutoroutePart",
-              "Settings": {
-                "ContentTypePartSettings": {
-                  "Position": "2"
-                },
-                "AutoroutePartSettings": {
-                  "AllowCustomPath": true,
-                  "Pattern": "{{ ContentItem | display_text | slugify }}",
-                  "AllowUpdatePath": true
-                },
-                "ContentIndexSettings": {}
-              }
-            },
-            {
-              "PartName": "ListPart",
-              "Name": "ListPart",
-              "Settings": {
-                "ContentTypePartSettings": {
-                  "Position": "3"
-                },
-                "ListPartSettings": {
-                  "PageSize": 9,
-                  "ContainedContentTypes": ["NewsPost"]
-                },
-                "ContentIndexSettings": {}
-              }
-            },
-            {
-              "PartName": "TitlePart",
-              "Name": "TitlePart",
-              "Settings": {
-                "ContentTypePartSettings": {
-                  "Position": "0"
-                }
-              }
-            }
-          ]
-        },
         {
           "Name": "NewsPost",
           "DisplayName": "News Post",
           "Settings": {
             "ContentTypeSettings": {
+              "Creatable": true,
               "Listable": true,
               "Draftable": true,
               "Versionable": true,
@@ -105,10 +83,11 @@
                 },
                 "AutoroutePartSettings": {
                   "AllowCustomPath": true,
-                  "Pattern": "{{ ContentItem | container | display_text | slugify }}/{{ ContentItem | display_text | slugify }}",
+                  "Pattern": "news/{{ ContentItem | display_text | slugify }}",
                   "AllowUpdatePath": true
                 },
-                "ContentIndexSettings": {}
+                "ContentIndexSettings": {},
+                "LinkableContentTypes": []
               }
             },
             {
@@ -133,6 +112,51 @@
             {
               "PartName": "Tag",
               "Name": "Tag",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "2"
+                }
+              }
+            },
+            {
+              "PartName": "TitlePart",
+              "Name": "TitlePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "0"
+                }
+              }
+            },
+            {
+              "PartName": "AutoroutePart",
+              "Name": "AutoroutePart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "1"
+                },
+                "LinkableContentTypes": [],
+                "AutoroutePartSettings": {
+                  "AllowCustomPath": true,
+                  "Pattern": "{{ ContentItem | display_text | slugify }}",
+                  "ManageContainedItemRoutes": true
+                }
+              }
+            }
+          ]
+        },
+        {
+          "Name": "News",
+          "DisplayName": "News",
+          "Settings": {
+            "ContentTypeSettings": {
+              "Stereotype": "Widget"
+            },
+            "FullTextAspectSettings": {}
+          },
+          "ContentTypePartDefinitionRecords": [
+            {
+              "PartName": "News",
+              "Name": "News",
               "Settings": {
                 "ContentTypePartSettings": {
                   "Position": "1"
@@ -163,7 +187,7 @@
                 "ContentPartFieldSettings": {
                   "DisplayName": "Content",
                   "Editor": "EditorJS",
-                  "Position": "3"
+                  "Position": "2"
                 },
                 "BlockFieldSettings": {
                   "LinkableContentTypes": [
@@ -182,7 +206,7 @@
               "Settings": {
                 "ContentPartFieldSettings": {
                   "DisplayName": "Thumbnail",
-                  "Position": "1"
+                  "Position": "0"
                 },
                 "MediaFieldSettings": {
                   "Hint": "Ideally image should be 350x200.",
@@ -197,7 +221,7 @@
               "Settings": {
                 "ContentPartFieldSettings": {
                   "DisplayName": "Thumbnail Alternate Text",
-                  "Position": "2"
+                  "Position": "1"
                 },
                 "TextFieldSettings": {
                   "Hint": "Short description of thumbnail image for accessibility."
@@ -211,12 +235,14 @@
               "Settings": {
                 "ContentPartFieldSettings": {
                   "DisplayName": "Further Reading",
-                  "Position": "5"
+                  "Position": "4"
                 },
                 "ContentPickerFieldSettings": {
                   "Hint": "Select other news items that will be displayed after content.",
                   "Multiple": true,
-                  "DisplayedContentTypes": ["NewsPost"]
+                  "DisplayedContentTypes": [
+                    "NewsPost"
+                  ]
                 },
                 "ContentIndexSettings": {}
               }
@@ -227,11 +253,48 @@
               "Settings": {
                 "ContentPartFieldSettings": {
                   "DisplayName": "Tags",
-                  "Position": "4"
+                  "Editor": "Tags",
+                  "Position": "3"
                 },
                 "ContentIndexSettings": {},
                 "TaxonomyFieldSettings": {
                   "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
+                },
+                "TaxonomyFieldTagsEditorSettings": {}
+              }
+            }
+          ]
+        },
+        {
+          "Name": "News",
+          "Settings": {},
+          "ContentPartFieldDefinitionRecords": [
+            {
+              "FieldName": "NumericField",
+              "Name": "PageSize",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Number of Posts",
+                  "Position": "0"
+                },
+                "NumericFieldSettings": {
+                  "Hint": "Number of news posts to display.",
+                  "Scale": 1,
+                  "Minimum": 0.0
+                }
+              }
+            },
+            {
+              "FieldName": "BooleanField",
+              "Name": "Paging",
+              "Settings": {
+                "ContentPartFieldSettings": {
+                  "DisplayName": "Paging",
+                  "Position": "1"
+                },
+                "BooleanFieldSettings": {
+                  "Hint": "Display pagination controls for navigating through news posts.",
+                  "Label": "Paging"
                 }
               }
             }
@@ -240,89 +303,30 @@
       ]
     },
     {
-      "name": "content",
-      "data": [
+      "name": "lucene-index",
+      "Indices": [
         {
-          "ContentItemId": "4dzdnpafscnp33y8xdz4ch45xt",
-          "ContentItemVersionId": "40natxtbv3xdktw41gfdt3mv4m",
-          "ContentType": "News",
-          "DisplayText": "News",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-10-16T21:33:29.8207987Z",
-          "PublishedUtc": "2019-10-16T21:33:29.8207987Z",
-          "CreatedUtc": "2019-10-16T21:33:29.8207987Z",
-          "Owner": "etch-play",
-          "Author": "etch-play",
-          "News": {},
-          "AutoroutePart": {
-            "Path": "news",
-            "SetHomepage": false
-          },
-          "ListPart": {
-            "FeedProxyUrl": null,
-            "FeedItemsCount": 20
-          },
-          "TitlePart": {
-            "Title": "News"
-          }
-        },
-        {
-          "ContentItemId": "45dmkhfhg1fsese84swhh990we",
-          "ContentItemVersionId": "4amfyp4trwn4bteddf892gf3mg",
-          "ContentType": "Taxonomy",
-          "DisplayText": "Tags",
-          "Latest": true,
-          "Published": true,
-          "ModifiedUtc": "2019-10-16T21:33:29.8207987Z",
-          "PublishedUtc": "2019-10-16T21:33:29.8207987Z",
-          "CreatedUtc": "2019-10-16T21:33:29.8207987Z",
-          "Owner": "etch-play",
-          "Author": null,
-          "TitlePart": {
-            "Title": "Tags"
-          },
-          "AliasPart": {
-            "Alias": "tags"
-          },
-          "TaxonomyPart": {
-            "Terms": [],
-            "TermContentType": "Tag"
+          "News": {
+            "AnalyzerName": "standardanalyzer",
+            "IndexLatest": false,
+            "IndexedContentTypes": [
+              "NewsPost"
+            ],
+            "Culture": "any"
           }
         }
       ]
     },
     {
-      "name": "AdminMenu",
-      "data": [
+      "name": "Queries",
+      "Queries": [
         {
-          "Id": "140d031157df456c8186c2cbf4dc9742",
+          "Index": "News",
+          "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"NewsPost\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.PublishedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n  \"from\": {{from}},\r\n  \"size\": {{size}}\r\n}",
+          "ReturnContentItems": true,
           "Name": "News",
-          "Enabled": true,
-          "MenuItems": [
-            {
-              "$type": "OrchardCore.AdminMenu.AdminNodes.LinkAdminNode, OrchardCore.AdminMenu",
-              "LinkText": "News",
-              "LinkUrl": "Admin/Contents/ContentItems/4dzdnpafscnp33y8xdz4ch45xt/Display",
-              "IconClass": "fas fa-newspaper",
-              "UniqueId": "f3deff9a4f9d4d1abfa36d018e921453",
-              "Enabled": true,
-              "Text": null,
-              "Id": null,
-              "Href": null,
-              "Url": null,
-              "Position": null,
-              "Priority": 0,
-              "LinkToFirstChild": true,
-              "LocalNav": false,
-              "Culture": null,
-              "Resource": null,
-              "Items": [],
-              "RouteValues": null,
-              "Permissions": [],
-              "Classes": []
-            }
-          ]
+          "Source": "Lucene",
+          "Schema": null
         }
       ]
     }
