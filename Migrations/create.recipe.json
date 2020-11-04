@@ -98,6 +98,24 @@
                   "Position": "0"
                 }
               }
+            },
+            {
+              "PartName": "CommonPart",
+              "Name": "CommonPart",
+              "Settings": {
+                "ContentTypePartSettings": {
+                  "Position": "3"
+                },
+                "CommonPartSettings": {
+                  "DisplayDateEditor": true
+                },
+                "LinkableContentTypes": [],
+                "GalleryPartSettings": {
+                  "ThumbnailWidth": 480,
+                  "ThumbnailHeight": 270
+                },
+                "ContentIndexSettings": {}
+              }
             }
           ]
         },
@@ -322,7 +340,7 @@
       "Queries": [
         {
           "Index": "News",
-          "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"NewsPost\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.PublishedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n  \"from\": {{from}},\r\n  \"size\": {{size}}\r\n}",
+          "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"NewsPost\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.CreatedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n  \"from\": {{from}},\r\n  \"size\": {{size}}\r\n}",
           "ReturnContentItems": true,
           "Name": "News",
           "Source": "Lucene",
