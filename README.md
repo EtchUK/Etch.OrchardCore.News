@@ -20,18 +20,12 @@ Enabling the "News" feature will automatically set up a good starting place for 
 
 ### Content Definitions
 
-Creates a "News" & "News Post" content type where "News" uses a `ListPart` to contain a collection of news posts. "News Post" is configured to have various fields that would commonly be found on a news article (e.g. Author, Tags, Related News) as well as using [our block editor](https://github.com/etchuk/Etch.OrchardCore.Blocks) to curate the content for the article.
-
-As part of the set up, a "News" content item will be created, which can be accessed via `/news`.
-
-### Admin Menu
-
-To make it easier for content editors to add a "News Post", a "News" admin menu option is configured, which when selected will take the user to the "News" content item that was created listing any associated news posts.
+Creates a "News Post" content type. "News Post" is configured to have various fields that would commonly be found on a news article (e.g. Author, Tags, Related News) as well as using [our block editor](https://github.com/etchuk/Etch.OrchardCore.Blocks) to curate the content for the article.
 
 ### Tags
 
 "News Post" contains a taxonomy field that is linked to a "Tags" taxonomy configured to use a "Tag" content type.
 
-### Example Post
+### Example Content
 
 This is not created by default, however a recipe for creating an example news post is available and can be run via the admin dashboard ("Settings" -> "Recipes").
