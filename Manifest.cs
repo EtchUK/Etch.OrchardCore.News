@@ -9,6 +9,7 @@ using OrchardCore.Modules.Manifest;
     Website = "https://etchuk.com",
     Dependencies = new string[] {
         "Etch.OrchardCore.Blocks",
+        "Etch.OrchardCore.SEO",
         "OrchardCore.ContentFields",
         "OrchardCore.Lucene",
         "OrchardCore.Media",
