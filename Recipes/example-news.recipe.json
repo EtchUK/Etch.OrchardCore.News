@@ -4,7 +4,7 @@
   "description": "Creates a few example news posts.",
   "author": "Etch",
   "website": "https://etchuk.com",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "issetuprecipe": false,
   "categories": ["Content"],
   "tags": ["etch"],
