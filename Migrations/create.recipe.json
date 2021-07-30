@@ -86,8 +86,7 @@
                   "Pattern": "news/{{ ContentItem | display_text | slugify }}",
                   "AllowUpdatePath": true
                 },
-                "ContentIndexSettings": {},
-                "LinkableContentTypes": []
+                "ContentIndexSettings": {}
               }
             },
             {
@@ -156,7 +155,6 @@
                 "ContentTypePartSettings": {
                   "Position": "1"
                 },
-                "LinkableContentTypes": [],
                 "AutoroutePartSettings": {
                   "AllowCustomPath": true,
                   "Pattern": "{{ ContentItem | display_text | slugify }}",
