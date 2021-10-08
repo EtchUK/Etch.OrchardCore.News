@@ -8,9 +8,9 @@ using OrchardCore.Modules.Manifest;
     Version = "1.0.1",
     Website = "https://etchuk.com",
     Dependencies = new string[] {
-        "Etch.OrchardCore.Blocks",
         "Etch.OrchardCore.SEO",
         "OrchardCore.ContentFields",
+        "OrchardCore.Flows",
         "OrchardCore.Lucene",
         "OrchardCore.Media",
         "OrchardCore.Queries",

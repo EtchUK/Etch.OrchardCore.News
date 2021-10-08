@@ -13,25 +13,24 @@
       "name": "content",
       "data": [
         {
-          "ContentItemId": "4b7v26s0hffgjry6d8785nk8ma",
-          "ContentItemVersionId": "4hm0trqgyrvd759xfw1ctcqt40",
+          "ContentItemId": "48fz5benzj87pwj990gy5gdvdy",
+          "ContentItemVersionId": "4apa0pg4cr9cevbkhws2j905cn",
           "ContentType": "NewsPost",
           "DisplayText": "Example Blog Post #1",
           "Latest": true,
           "Published": true,
-          "ModifiedUtc": "2020-06-15T22:22:15.4579938Z",
-          "PublishedUtc": "2020-06-15T22:22:15.4627791Z",
-          "CreatedUtc": "2020-06-15T22:22:15.4579938Z",
-          "Owner": "[js: parameters('AdminUsername')]",
-          "Author": "[js: parameters('AdminUsername')]",
+          "ModifiedUtc": "2021-10-11T09:02:07.9707046Z",
+          "PublishedUtc": "2021-10-11T09:02:08.1577606Z",
+          "CreatedUtc": "2021-10-11T08:50:00Z",
+          "Owner": "40sp25w4vz6nc0xntpfq4nwnm0",
+          "Author": "etch-play",
           "NewsPost": {
-            "Content": {
-              "Data": "{\"time\":1592259735319,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"caption\":\"The image fills the width of its parent.\",\"mediaPath\":\"News/Default/example-news-1280w.jpg\",\"url\":\"/demo/media/News/Default/example-news-1280w.jpg\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.18.0\"}",
-              "Html": null
-            },
             "Thumbnail": {
               "Paths": [
                 "News/Default/example-news-400w.jpg"
+              ],
+              "MediaTexts": [
+                ""
               ]
             },
             "ThumbnailAlt": {
@@ -41,12 +40,12 @@
               "ContentItemIds": []
             },
             "Tags": {
-              "TagNames": [
-                "Featured"
-              ],
               "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
               "TermContentItemIds": [
-                "4rf9s6d6qtjpas84f52sg2qhc2"
+                "4w4q8e2echs24t6vqktkn54v40"
+              ],
+              "TagNames": [
+                "Featured"
               ]
             }
           },
@@ -59,28 +58,77 @@
           },
           "TitlePart": {
             "Title": "Example Blog Post #1"
+          },
+          "CommonPart": {},
+          "Content": {
+            "Widgets": [
+              {
+                "ContentItemId": "4tz2549w6h74wsybq9jxqaqq5a",
+                "ContentItemVersionId": null,
+                "ContentType": "VisualEditor",
+                "DisplayText": "",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-10-11T09:02:08.1169595Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "etch-play",
+                "VisualEditor": {
+                  "Content": {
+                    "Data": "{\"time\":1633942927891,\"blocks\":[{\"id\":\"Ep0zoYH7I7\",\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"id\":\"xggv1ng9K_\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"id\":\"Unw2lkTRDl\",\"type\":\"image\",\"data\":{\"url\":\"/example/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"id\":\"9G1LPrg5dy\",\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"id\":\"ll2l7_1W0E\",\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"id\":\"5Hm_aeJtcI\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"id\":\"WHScR0iSQP\",\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"id\":\"ibVPwhnIE5\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.22.2\"}",
+                    "Html": null
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              }
+            ]
+          },
+          "MetaTagsPart": {
+            "Description": null,
+            "Images": null,
+            "Title": null,
+            "IsEmpty": true,
+            "MetaTitle": {
+              "Text": null
+            },
+            "MetaDescription": {
+              "Text": null
+            },
+            "MetaImage": {
+              "Paths": [],
+              "MediaTexts": []
+            },
+            "Custom": {
+              "Data": []
+            },
+            "MetaNoIndex": {
+              "Value": false
+            }
           }
         },
         {
           "ContentItemId": "4dwx6chqkr420sh25me4p3e8mf",
-          "ContentItemVersionId": "4bp5jxdf5z6rhxbg09sn3b3jdt",
+          "ContentItemVersionId": "4raq0nmvgp20k7gex5xv6ffvx0",
           "ContentType": "NewsPost",
           "DisplayText": "Example Blog Post #2",
           "Latest": true,
           "Published": true,
-          "ModifiedUtc": "2020-06-15T22:23:22.3540836Z",
-          "PublishedUtc": "2020-06-15T22:23:22.359008Z",
-          "CreatedUtc": "2020-06-15T22:23:22.3540836Z",
-          "Owner": "[js: parameters('AdminUsername')]",
-          "Author": "[js: parameters('AdminUsername')]",
+          "ModifiedUtc": "2021-10-11T09:02:52.5123417Z",
+          "PublishedUtc": "2021-10-11T09:02:52.5475171Z",
+          "CreatedUtc": "2021-10-11T08:50:00Z",
+          "Owner": "40sp25w4vz6nc0xntpfq4nwnm0",
+          "Author": "etch-play",
           "NewsPost": {
-            "Content": {
-              "Data": "{\"time\":1592259802241,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"url\":\"/demo/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.18.0\"}",
-              "Html": null
-            },
             "Thumbnail": {
               "Paths": [
                 "News/Default/example-news-400w.jpg"
+              ],
+              "MediaTexts": [
+                ""
               ]
             },
             "ThumbnailAlt": {
@@ -90,14 +138,14 @@
               "ContentItemIds": []
             },
             "Tags": {
+              "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
+              "TermContentItemIds": [
+                "4f32e7g4tp6tg2yf10w9v3zk5k",
+                "4d7tyezyj4t30rgbh6yce8rf5r"
+              ],
               "TagNames": [
                 "Games",
                 "Mobile"
-              ],
-              "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
-              "TermContentItemIds": [
-                "42zsbct55dcvk0sj3xk0jas0dt",
-                "4csvjqamgtan040np9pdgwk3dk"
               ]
             }
           },
@@ -110,28 +158,77 @@
           },
           "TitlePart": {
             "Title": "Example Blog Post #2"
+          },
+          "CommonPart": {},
+          "Content": {
+            "Widgets": [
+              {
+                "ContentItemId": "4tz2549w6h74wsybq9jxqaqq5a",
+                "ContentItemVersionId": null,
+                "ContentType": "VisualEditor",
+                "DisplayText": "",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-10-11T09:02:52.5345745Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "etch-play",
+                "VisualEditor": {
+                  "Content": {
+                    "Data": "{\"time\":1633942972464,\"blocks\":[{\"id\":\"Ep0zoYH7I7\",\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"id\":\"xggv1ng9K_\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"id\":\"Unw2lkTRDl\",\"type\":\"image\",\"data\":{\"url\":\"/example/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"id\":\"9G1LPrg5dy\",\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"id\":\"ll2l7_1W0E\",\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"id\":\"5Hm_aeJtcI\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"id\":\"WHScR0iSQP\",\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"id\":\"ibVPwhnIE5\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.22.2\"}",
+                    "Html": null
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              }
+            ]
+          },
+          "MetaTagsPart": {
+            "Description": null,
+            "Images": null,
+            "Title": null,
+            "IsEmpty": true,
+            "MetaTitle": {
+              "Text": null
+            },
+            "MetaDescription": {
+              "Text": null
+            },
+            "MetaImage": {
+              "Paths": [],
+              "MediaTexts": []
+            },
+            "Custom": {
+              "Data": []
+            },
+            "MetaNoIndex": {
+              "Value": false
+            }
           }
         },
         {
           "ContentItemId": "4qngemy19tm6q17v6bd78xv5c9",
-          "ContentItemVersionId": "4r5d53sfrtf35zkwcntnzjrz49",
+          "ContentItemVersionId": "4b6j7fm9bfmqt4m074g6ehh2d3",
           "ContentType": "NewsPost",
           "DisplayText": "Example Blog Post #3",
           "Latest": true,
           "Published": true,
-          "ModifiedUtc": "2020-06-15T22:40:56.7620791Z",
-          "PublishedUtc": "2020-06-15T22:40:56.7823198Z",
-          "CreatedUtc": "2020-06-15T22:24:14.9135095Z",
-          "Owner": "[js: parameters('AdminUsername')]",
-          "Author": "[js: parameters('AdminUsername')]",
+          "ModifiedUtc": "2021-10-11T09:03:11.30708Z",
+          "PublishedUtc": "2021-10-11T09:03:11.3476348Z",
+          "CreatedUtc": "2021-10-11T08:50:00Z",
+          "Owner": "40sp25w4vz6nc0xntpfq4nwnm0",
+          "Author": "etch-play",
           "NewsPost": {
-            "Content": {
-              "Data": "{\"time\":1592260856690,\"blocks\":[{\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"type\":\"image\",\"data\":{\"url\":\"/demo/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.18.0\"}",
-              "Html": null
-            },
             "Thumbnail": {
               "Paths": [
                 "News/Default/example-news-400w.jpg"
+              ],
+              "MediaTexts": [
+                ""
               ]
             },
             "ThumbnailAlt": {
@@ -141,17 +238,17 @@
               "ContentItemIds": []
             },
             "Tags": {
-              "TagNames": [
-                "Featured"
-              ],
               "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we",
               "TermContentItemIds": [
-                "4rf9s6d6qtjpas84f52sg2qhc2"
+                "4w4q8e2echs24t6vqktkn54v40"
+              ],
+              "TagNames": [
+                "Featured"
               ]
             }
           },
           "AutoroutePart": {
-            "Path": "news/example-blog-post-3",
+            "Path": "blog/example-blog-post-3",
             "SetHomepage": false,
             "Disabled": false,
             "RouteContainedItems": false,
@@ -159,20 +256,70 @@
           },
           "TitlePart": {
             "Title": "Example Blog Post #3"
+          },
+          "CommonPart": {},
+          "Content": {
+            "Widgets": [
+              {
+                "ContentItemId": "4tz2549w6h74wsybq9jxqaqq5a",
+                "ContentItemVersionId": null,
+                "ContentType": "VisualEditor",
+                "DisplayText": "",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-10-11T09:03:11.3319582Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": "",
+                "Author": "etch-play",
+                "VisualEditor": {
+                  "Content": {
+                    "Data": "{\"time\":1633942991244,\"blocks\":[{\"id\":\"Ep0zoYH7I7\",\"type\":\"paragraph\",\"data\":{\"text\":\"Donec rhoncus nisi non metus hendrerit, eu bibendum augue ultricies. Integer ut lacinia tellus. Aenean nisl urna, pellentesque non diam ac, lobortis lobortis lectus. Sed ullamcorper eros id vestibulum commodo. Fusce convallis dolor quis faucibus rutrum. Nam in odio id justo venenatis dictum. Aenean dignissim blandit nulla, quis consequat purus ullamcorper non.\"}},{\"id\":\"xggv1ng9K_\",\"type\":\"paragraph\",\"data\":{\"text\":\"Mauris interdum, quam vel bibendum molestie, massa magna vestibulum arcu, a pellentesque sapien felis nec elit. Cras condimentum auctor congue. Aliquam non laoreet lectus. In in nisl id ligula pulvinar tristique.\"}},{\"id\":\"Unw2lkTRDl\",\"type\":\"image\",\"data\":{\"url\":\"/example/media/News/Default/example-news-1280w.jpg\",\"caption\":\"The image fills the width of its parent.\",\"stretched\":false}},{\"id\":\"9G1LPrg5dy\",\"type\":\"paragraph\",\"data\":{\"text\":\"Vestibulum scelerisque mauris scelerisque arcu tincidunt lacinia. Donec luctus facilisis ex. Pellentesque ligula est, scelerisque sagittis nisi non, semper laoreet orci. Vestibulum sollicitudin vitae orci nec facilisis. Integer eu posuere dui, non pulvinar magna.\"}},{\"id\":\"ll2l7_1W0E\",\"type\":\"header\",\"data\":{\"text\":\"Article subheading\",\"level\":2}},{\"id\":\"5Hm_aeJtcI\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aenean porttitor mollis urna, iaculis tristique orci rutrum et. Phasellus elementum, erat ut aliquam facilisis, dolor urna congue ligula, eu ultricies purus tortor eget lorem.\"}},{\"id\":\"WHScR0iSQP\",\"type\":\"paragraph\",\"data\":{\"text\":\"Fusce sit amet magna justo. In fermentum ipsum id metus rhoncus consequat eget vitae ligula. Quisque rutrum gravida vestibulum. Pellentesque eleifend imperdiet tincidunt.\"}},{\"id\":\"ibVPwhnIE5\",\"type\":\"paragraph\",\"data\":{\"text\":\"Aliquam ut purus a magna placerat dictum. Pellentesque risus magna, dignissim nec eros nec, mattis consequat velit. Integer sodales massa eu egestas interdum. Ut cursus, libero at pretium tincidunt, arcu erat elementum massa, vel pulvinar velit diam eu lorem.\"}}],\"version\":\"2.22.2\"}",
+                    "Html": null
+                  }
+                },
+                "FlowMetadata": {
+                  "Alignment": 3,
+                  "Size": 100
+                }
+              }
+            ]
+          },
+          "MetaTagsPart": {
+            "Description": null,
+            "Images": null,
+            "Title": null,
+            "IsEmpty": true,
+            "MetaTitle": {
+              "Text": null
+            },
+            "MetaDescription": {
+              "Text": null
+            },
+            "MetaImage": {
+              "Paths": [],
+              "MediaTexts": []
+            },
+            "Custom": {
+              "Data": []
+            },
+            "MetaNoIndex": {
+              "Value": false
+            }
           }
         },
         {
           "ContentItemId": "45dmkhfhg1fsese84swhh990we",
-          "ContentItemVersionId": "4rr1rjbkq9rtwv7k1gpyw4nk4y",
+          "ContentItemVersionId": "4ckeqnp80vc94xzapk169y50xc",
           "ContentType": "Taxonomy",
           "DisplayText": "Tags",
           "Latest": true,
           "Published": true,
-          "ModifiedUtc": "2020-06-15T22:18:11.3792992Z",
-          "PublishedUtc": "2020-06-15T22:18:11.4021793Z",
+          "ModifiedUtc": "2021-10-11T09:02:49.3773444Z",
+          "PublishedUtc": "2021-10-11T09:02:49.384225Z",
           "CreatedUtc": "2019-10-16T21:33:29.8207987Z",
-          "Owner": "[js: parameters('AdminUsername')]",
-          "Author": "[js: parameters('AdminUsername')]",
+          "Owner": "etch-play",
+          "Author": null,
           "TitlePart": {
             "Title": "Tags"
           },
@@ -182,26 +329,20 @@
           "TaxonomyPart": {
             "Terms": [
               {
-                "ContentItemId": "4rf9s6d6qtjpas84f52sg2qhc2",
+                "ContentItemId": "4w4q8e2echs24t6vqktkn54v40",
                 "ContentItemVersionId": null,
                 "ContentType": "Tag",
                 "DisplayText": "Featured",
                 "Latest": false,
                 "Published": false,
-                "ModifiedUtc": "2020-06-15T22:07:08.1226559Z",
+                "ModifiedUtc": "2021-10-11T09:02:04.7477745Z",
                 "PublishedUtc": null,
                 "CreatedUtc": null,
                 "Owner": null,
-                "Author": "[js: parameters('AdminUsername')]",
+                "Author": "etch-play",
                 "Tag": {},
                 "TitlePart": {
-                  "Title": "Featured"
-                },
-                "TermPart": {
-                  "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
-                },
-                "@WeldedPartSettings": {
-                  "TermPart": {}
+                  "Title": null
                 },
                 "AutoroutePart": {
                   "Path": "featured",
@@ -209,29 +350,29 @@
                   "Disabled": false,
                   "RouteContainedItems": false,
                   "Absolute": false
-                }
-              },
-              {
-                "ContentItemId": "42zsbct55dcvk0sj3xk0jas0dt",
-                "ContentItemVersionId": null,
-                "ContentType": "Tag",
-                "DisplayText": "Games",
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2020-06-15T22:08:02.6346447Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "[js: parameters('AdminUsername')]",
-                "Tag": {},
-                "TitlePart": {
-                  "Title": "Games"
                 },
                 "TermPart": {
                   "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
                 },
                 "@WeldedPartSettings": {
                   "TermPart": {}
+                }
+              },
+              {
+                "ContentItemId": "4f32e7g4tp6tg2yf10w9v3zk5k",
+                "ContentItemVersionId": null,
+                "ContentType": "Tag",
+                "DisplayText": "Games",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-10-11T09:02:46.1495426Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "etch-play",
+                "Tag": {},
+                "TitlePart": {
+                  "Title": null
                 },
                 "AutoroutePart": {
                   "Path": "games",
@@ -239,29 +380,29 @@
                   "Disabled": false,
                   "RouteContainedItems": false,
                   "Absolute": false
-                }
-              },
-              {
-                "ContentItemId": "4csvjqamgtan040np9pdgwk3dk",
-                "ContentItemVersionId": null,
-                "ContentType": "Tag",
-                "DisplayText": "Mobile",
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2020-06-15T22:07:36.326528Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "[js: parameters('AdminUsername')]",
-                "Tag": {},
-                "TitlePart": {
-                  "Title": "Mobile"
                 },
                 "TermPart": {
                   "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
                 },
                 "@WeldedPartSettings": {
                   "TermPart": {}
+                }
+              },
+              {
+                "ContentItemId": "4d7tyezyj4t30rgbh6yce8rf5r",
+                "ContentItemVersionId": null,
+                "ContentType": "Tag",
+                "DisplayText": "Mobile",
+                "Latest": false,
+                "Published": false,
+                "ModifiedUtc": "2021-10-11T09:02:49.3802318Z",
+                "PublishedUtc": null,
+                "CreatedUtc": null,
+                "Owner": null,
+                "Author": "etch-play",
+                "Tag": {},
+                "TitlePart": {
+                  "Title": null
                 },
                 "AutoroutePart": {
                   "Path": "mobile",
@@ -269,36 +410,12 @@
                   "Disabled": false,
                   "RouteContainedItems": false,
                   "Absolute": false
-                }
-              },
-              {
-                "ContentItemId": "4j6c5a5yb9tyh39agvxx6x80mz",
-                "ContentItemVersionId": null,
-                "ContentType": "Tag",
-                "DisplayText": "PC",
-                "Latest": false,
-                "Published": false,
-                "ModifiedUtc": "2020-06-15T22:07:25.3568361Z",
-                "PublishedUtc": null,
-                "CreatedUtc": null,
-                "Owner": null,
-                "Author": "[js: parameters('AdminUsername')]",
-                "Tag": {},
-                "TitlePart": {
-                  "Title": "PC"
                 },
                 "TermPart": {
                   "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
                 },
                 "@WeldedPartSettings": {
                   "TermPart": {}
-                },
-                "AutoroutePart": {
-                  "Path": "pc",
-                  "SetHomepage": false,
-                  "Disabled": false,
-                  "RouteContainedItems": false,
-                  "Absolute": false
                 }
               }
             ],
