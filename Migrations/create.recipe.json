@@ -179,36 +179,6 @@
               }
             }
           ]
-        },
-        {
-          "Name": "News",
-          "DisplayName": "News",
-          "Settings": {
-            "ContentTypeSettings": {
-              "Stereotype": "Widget"
-            },
-            "FullTextAspectSettings": {}
-          },
-          "ContentTypePartDefinitionRecords": [
-            {
-              "PartName": "News",
-              "Name": "News",
-              "Settings": {
-                "ContentTypePartSettings": {
-                  "Position": "1"
-                }
-              }
-            },
-            {
-              "PartName": "TitlePart",
-              "Name": "TitlePart",
-              "Settings": {
-                "ContentTypePartSettings": {
-                  "Position": "0"
-                }
-              }
-            }
-          ]
         }
       ],
       "ContentParts": [
@@ -277,41 +247,6 @@
                   "TaxonomyContentItemId": "45dmkhfhg1fsese84swhh990we"
                 },
                 "TaxonomyFieldTagsEditorSettings": {}
-              }
-            }
-          ]
-        },
-        {
-          "Name": "News",
-          "Settings": {},
-          "ContentPartFieldDefinitionRecords": [
-            {
-              "FieldName": "NumericField",
-              "Name": "PageSize",
-              "Settings": {
-                "ContentPartFieldSettings": {
-                  "DisplayName": "Number of Posts",
-                  "Position": "0"
-                },
-                "NumericFieldSettings": {
-                  "Hint": "Number of news posts to display.",
-                  "Scale": 1,
-                  "Minimum": 0.0
-                }
-              }
-            },
-            {
-              "FieldName": "BooleanField",
-              "Name": "Paging",
-              "Settings": {
-                "ContentPartFieldSettings": {
-                  "DisplayName": "Paging",
-                  "Position": "1"
-                },
-                "BooleanFieldSettings": {
-                  "Hint": "Display pagination controls for navigating through news posts.",
-                  "Label": "Paging"
-                }
               }
             }
           ]
