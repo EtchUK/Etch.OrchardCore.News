@@ -13,6 +13,7 @@ using OrchardCore.Modules.Manifest;
         "OrchardCore.Flows",
         "OrchardCore.Lucene",
         "OrchardCore.Media",
+        "OrchardCore.PublishLater",
         "OrchardCore.Queries",
         "OrchardCore.Taxonomies"
     }
