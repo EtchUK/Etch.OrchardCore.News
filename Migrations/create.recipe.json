@@ -200,22 +200,9 @@
                   "Position": "0"
                 },
                 "MediaFieldSettings": {
+                  "AllowMediaText ": true,
                   "Hint": "Ideally image should be 350x200.",
                   "Multiple": false
-                },
-                "ContentIndexSettings": {}
-              }
-            },
-            {
-              "FieldName": "TextField",
-              "Name": "ThumbnailAlt",
-              "Settings": {
-                "ContentPartFieldSettings": {
-                  "DisplayName": "Thumbnail Alternate Text",
-                  "Position": "1"
-                },
-                "TextFieldSettings": {
-                  "Hint": "Short description of thumbnail image for accessibility."
                 },
                 "ContentIndexSettings": {}
               }

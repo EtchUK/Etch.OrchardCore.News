@@ -12,11 +12,25 @@
             "place": "Content:5"
         }
     ],
+    "CommonPart_Edit": [
+        {
+            "place": "Parts#Meta:15",
+            "contentPart": [ "CommonPart" ],
+            "contentType": [ "NewsPost" ]
+        }
+    ],
     "ContentPickerField": [
         {
             "contentType": "NewsPost",
             "displayType": "Detail",
             "place": "AfterContent:10"
+        }
+    ],
+    "ContentPickerField_Edit": [
+        {
+            "place": "Parts#Meta:7",
+            "differentiator": "NewsPost-FurtherReading",
+            "contentType": [ "NewsPost" ]
         }
     ],
     "MediaField": [
@@ -26,12 +40,26 @@
             "place": "-"
         }
     ],
+    "MediaField_Edit": [
+        {
+            "place": "Parts#Meta:5",
+            "differentiator": "NewsPost-Thumbnail",
+            "contentType": [ "NewsPost" ]
+        }
+    ],
     "TaxonomyField": [
         {
             "contentType": "NewsPost",
             "displayType": "Detail",
             "place": "Content:10"
         }
+    ],
+    "TaxonomyField_Edit": [
+        {
+            "place": "Parts#Meta:6",
+            "differentiator": "NewsPost-Tags",
+            "contentType": [ "NewsPost" ]
+          }
     ],
     "TextField": [
         {

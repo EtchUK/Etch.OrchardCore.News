@@ -1,10 +1,12 @@
 {% assign thumbnailPath = Model.ContentItem.Content.NewsPost.Thumbnail.Paths[0] %}
 {% assign isPublished = Model.ContentItem.Published %}
 
+{% assign altText = Model.ContentItem.Content.NewsPost.ThumbnailAlt.Text | default: Model.ContentItem.Content.NewsPost.Thumbnail.MediaTexts[0] %}
+
 <a href="{{ Model.ContentItem | display_url }}" class="card card--news card--equal-height">
     {% if thumbnailPath != null %}
     <picture class="card__media">
-        <img class="card__media-image" src="{{ thumbnailPath | asset_url | resize_url: width:350, height:200, mode:'crop' }}" alt="{{ Model.ContentItem.Content.NewsPost.ThumbnailAlt.Text }}" />
+        <img class="card__media-image" src="{{ thumbnailPath | asset_url | resize_url: width:350, height:200, mode:'crop' }}" alt="{{ altText }}" />
     </picture>
     {% else %}
     <div class="card__media card__media--empty" style="height: 200px; background-color: #ccc;"></div>
