@@ -30,11 +30,8 @@
                 "News/Default/example-news-400w.jpg"
               ],
               "MediaTexts": [
-                ""
+                "Description of image"
               ]
-            },
-            "ThumbnailAlt": {
-              "Text": "Description of image"
             },
             "FurtherReading": {
               "ContentItemIds": []
@@ -128,11 +125,8 @@
                 "News/Default/example-news-400w.jpg"
               ],
               "MediaTexts": [
-                ""
+                "Description of image"
               ]
-            },
-            "ThumbnailAlt": {
-              "Text": "Description of image"
             },
             "FurtherReading": {
               "ContentItemIds": []
@@ -228,11 +222,8 @@
                 "News/Default/example-news-400w.jpg"
               ],
               "MediaTexts": [
-                ""
+                "Description of image"
               ]
-            },
-            "ThumbnailAlt": {
-              "Text": "Description of image"
             },
             "FurtherReading": {
               "ContentItemIds": []
