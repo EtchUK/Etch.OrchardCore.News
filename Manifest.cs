@@ -5,7 +5,7 @@ using OrchardCore.Modules.Manifest;
     Category = "Content",
     Description = "Configures content definitions for news.",
     Name = "News",
-    Version = "1.3.0",
+    Version = "1.4.0",
     Website = "https://etchuk.com",
     Dependencies = new string[] {
         "Etch.OrchardCore.SEO",
