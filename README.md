@@ -8,11 +8,13 @@ Module for [Orchard Core](https://github.com/OrchardCMS/OrchardCore) that provid
 
 ## Orchard Core Reference
 
-This module is referencing a stable build of Orchard Core ([`1.3.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.3.0)).
+This module is referencing a stable build of Orchard Core ([`1.4.0`](https://www.nuget.org/packages/OrchardCore.Module.Targets/1.4.0)).
 
 ## Installing
 
-This module is currently not available on NuGet but you can [download the source](https://github.com/etchuk/Etch.OrchardCore.Fields/archive/master.zip) or clone the repository to your local machine. Add the project to your solution that contains an Orchard Core project and add a reference to Etch.OrchardCore.News.
+This module is available on [NuGet](https://www.nuget.org/packages/Etch.OrchardCore.News/). Add a reference to your Orchard Core web project via the NuGet package manager. Search for "Etch.OrchardCore.News", ensuring include prereleases is checked.
+
+Alternatively you can [download the source](https://github.com/etchuk/Etch.OrchardCore.News/archive/master.zip) or clone the repository to your local machine. Add the project to your solution that contains an Orchard Core project and add a reference to Etch.OrchardCore.News.
 
 ## Usage
 
