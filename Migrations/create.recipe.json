@@ -272,7 +272,7 @@
       "Queries": [
         {
           "Index": "News",
-          "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"NewsPost\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.CreatedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n  \"from\": {{from}},\r\n  \"size\": {{size}}\r\n}",
+          "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"NewsPost\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.CreatedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n   \r\n {% if from != nil %}    \r\n  \"from\": {{from}},\r\n {% endif %}\r\n   \r\n {% if size != nil %}   \r\n  \"size\": {{size}}\r\n {% endif %}\r\n \r\n}",
           "ReturnContentItems": true,
           "Name": "News",
           "Source": "Lucene",
@@ -282,3 +282,4 @@
     }
   ]
 }
+
