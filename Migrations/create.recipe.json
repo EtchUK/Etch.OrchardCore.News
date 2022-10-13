@@ -201,7 +201,7 @@
                 },
                 "MediaFieldSettings": {
                   "AllowMediaText ": true,
-                  "Hint": "Ideally image should be 350x200.",
+                  "Hint": "Image should be at least 1280x720. While it is often displayed at a much smaller size, in some scenarios thumbnails are displayed in a large format.",
                   "Multiple": false
                 },
                 "ContentIndexSettings": {}
@@ -282,4 +282,3 @@
     }
   ]
 }
-
