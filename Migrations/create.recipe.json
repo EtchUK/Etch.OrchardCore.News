@@ -6,8 +6,12 @@
   "website": "https://etchuk.com",
   "version": "1.2.1",
   "issetuprecipe": false,
-  "categories": ["Content"],
-  "tags": ["etch"],
+  "categories": [
+    "Content"
+  ],
+  "tags": [
+    "etch"
+  ],
   "steps": [
     {
       "name": "content",
@@ -218,7 +222,9 @@
                 "ContentPickerFieldSettings": {
                   "Hint": "Select other news items that will be displayed after content.",
                   "Multiple": true,
-                  "DisplayedContentTypes": ["NewsPost"]
+                  "DisplayedContentTypes": [
+                    "NewsPost"
+                  ]
                 },
                 "ContentIndexSettings": {}
               }
@@ -261,7 +267,9 @@
           "News": {
             "AnalyzerName": "standardanalyzer",
             "IndexLatest": false,
-            "IndexedContentTypes": ["NewsPost"],
+            "IndexedContentTypes": [
+              "NewsPost"
+            ],
             "Culture": "any"
           }
         }
@@ -272,7 +280,7 @@
       "Queries": [
         {
           "Index": "News",
-          "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"NewsPost\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.CreatedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n  \"from\": {{from}},\r\n  \"size\": {{size}}\r\n}",
+          "Template": "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"terms\": { \"Content.ContentItem.ContentType\": [ \"NewsPost\"] } }\r\n      ]\r\n    }\r\n  },\r\n  \"sort\": {\r\n    \"Content.ContentItem.CreatedUtc\": {\r\n      \"order\": \"desc\"\r\n    }\r\n  },\r\n  {% if from != blank %}\r\n    \"from\": {{from}},\r\n  {% endif %}\r\n    \r\n  {% if size != blank %}\r\n    \"size\": {{size}}\r\n  {% endif %}\r\n}",
           "ReturnContentItems": true,
           "Name": "News",
           "Source": "Lucene",
