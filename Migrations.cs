@@ -2,6 +2,8 @@
 using OrchardCore.Data.Migration;
 using OrchardCore.Indexing;
 using OrchardCore.Recipes.Services;
+using OrchardCore.Search.Elasticsearch.Core.Models;
+using OrchardCore.Search.Lucene.Model;
 using System.Threading.Tasks;
 
 namespace Etch.OrchardCore.News
@@ -28,10 +30,14 @@ namespace Etch.OrchardCore.News
         {
             _contentDefinitionManager.AlterPartDefinition("NewsPost", builder => builder
                 .WithField("Tags", field => field
-                    .WithSettings(new ContentIndexSettings
+                    .WithSettings(new LuceneContentIndexSettings
                     {
                         Included = true,
                         Stored = true
+                    })
+                    .WithSettings(new ElasticContentIndexSettings
+                    {
+                        Included = true
                     })));
 
             return 2;

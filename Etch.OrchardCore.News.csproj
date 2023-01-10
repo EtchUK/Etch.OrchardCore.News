@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.4.1</Version>
+    <Version>$(VersionNumber)</Version>
     <PackageId>Etch.OrchardCore.News</PackageId>
     <Title>News</Title>
     <Authors>Etch UK Ltd.</Authors>
@@ -13,11 +13,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="OrchardCore.ContentManagement" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Module.Targets" Version="1.4.0" />
-    <PackageReference Include="OrchardCore.Taxonomies" Version="1.4.0" />
+    <EmbeddedResource Remove=".gitignore" />
+    <EmbeddedResource Remove="azure-pipelines.yml" />
+    <EmbeddedResource Remove="nuget.config" />
+    <EmbeddedResource Remove="LICENSE.md" />
+    <EmbeddedResource Remove="README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OrchardCore.ContentManagement" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Search.Elasticsearch" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Search.Lucene" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Taxonomies" Version="1.5.0" />
   </ItemGroup>
 
   <ItemGroup>
