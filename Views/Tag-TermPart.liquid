@@ -1,13 +1,15 @@
 ﻿{% assign termName = Model.ContentItem | display_text %}
 
+{% assign taggedContentItemsCount = Queries["ContentByTags"] | query: tagId: Model.ContentItem.ContentItemId | size %}
+
 <section class="section">
 	<div class="section__content constrain constrain--wide">
 		<h1 class="padding--bottom-large">{{ termName | capitalize }}</h1>
 
-        {% if Model.ContentItems.size == 1 %}
+        {% if taggedContentItemsCount == 1 %}
             <p>1 post tagged with <strong>{{ termName }}</strong></p>
         {% else %}
-            <p>{{ Model.ContentItems.size }} posts tagged with <strong>{{ termName }}</strong></p>
+            <p>{{ taggedContentItemsCount }} posts tagged with <strong>{{ termName }}</strong></p>
         {% endif %}
 
         <ul class="grid">
