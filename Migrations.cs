@@ -1,11 +1,9 @@
 ﻿using OrchardCore.ContentManagement.Metadata;
 using OrchardCore.Data.Migration;
 using OrchardCore.Indexing;
+using OrchardCore.Lucene;
 using OrchardCore.Queries;
 using OrchardCore.Recipes.Services;
-using OrchardCore.Search.Elasticsearch.Core.Models;
-using OrchardCore.Search.Lucene;
-using OrchardCore.Search.Lucene.Model;
 using System.ComponentModel;
 using System.Threading.Tasks;
 
@@ -51,7 +49,7 @@ namespace Etch.OrchardCore.News
                 Index = "News",
                 ReturnContentItems = true,
                 Name = "ContentByTags",
-                Template = "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"term\": { \"NewsPost.Tags.Ids\": \"{{tagId}}\" } }\r\n      ]\r\n    }\r\n  }\r\n}"
+                Template = "{\r\n  \"query\": {\r\n    \"bool\": { \r\n      \"must\": [\r\n        { \"term\": { \"NewsPost.Tags\": \"{{tagId}}\" } }\r\n      ]\r\n    }\r\n  }\r\n}"
             });
 
             return 3;
