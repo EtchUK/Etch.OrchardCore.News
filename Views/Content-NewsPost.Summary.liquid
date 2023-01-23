@@ -6,7 +6,7 @@
 {% assign cssClasses = "card card--news card--equal-height" %}
 
 {% if thumbnailPath != null %}
-    {% assign cssClasses = cssClasses | append: "card--has-media" %}
+    {% assign cssClasses = cssClasses | append: " card--has-media" %}
 {% endif %}
 
 <a href="{{ Model.ContentItem | display_url }}" class="{{ cssClasses }}">
