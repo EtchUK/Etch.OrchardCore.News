@@ -1,30 +1,26 @@
-﻿{% assign termName = Model.ContentItem | display_text %}
+﻿﻿{% assign termName = Model.ContentItem | display_text %}
 
 {% assign taggedContentItemsCount = Queries["ContentByTags"] | query: tagId: Model.ContentItem.ContentItemId | size %}
 
 <section class="section">
-	<div class="section__content constrain constrain--wide">
-		<h1 class="padding--bottom-large">{{ termName | capitalize }}</h1>
+	<div class="section__content constrain">
+		<h1 class="heading">{{ termName | capitalize }}</h1>
 
-        {% if taggedContentItemsCount == 1 %}
-            <p>1 post tagged with <strong>{{ termName }}</strong></p>
-        {% else %}
-            <p>{{ taggedContentItemsCount }} posts tagged with <strong>{{ termName }}</strong></p>
+        {% if taggedContentItemsCount != nil %}
+            <p>{{ taggedContentItemsCount }} post{% if taggedContentItemsCount != 1 %}s{% endif %} tagged with <strong>{{ termName }}</strong></p>
         {% endif %}
 
-        <ul class="grid">
-        {% for item in Model.ContentItems %}
-            <li class="grid__item">
-                {{ item | shape_build_display: "Summary" | shape_render }}
-            </li>
-        {% endfor %}
-        </ul>
-	</div>
-</section>
+        <div class="content-feed">
+            <div class="content-feed__list content-feed__list--two-cols columns--two">
+                {% for item in Model.ContentItems %}
+                    <div class="content-feed__item">
+                        {{ item | shape_build_display: "Summary" | shape_render }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
 
-<section class="section">
-    <div class="section__content">
-        {% shape_pager Model.Pager next_text: 'Next Page', previous_text: 'Previous Page' %}
+        {% shape_pager Model.Pager next_text: 'Older posts', previous_text: 'Newer posts' %}
         {{ Model.Pager | shape_render }}
-    </div>
+	</div>
 </section>
