@@ -2,17 +2,19 @@
 {% assign count = Model.ContentItemIds | size %}
 
 {% if count > 0 %}
-<section class="section section--wide padding--top-large">
-    <div class="section__content">
-        <h3 class="padding--bottom-large">{{ "Further reading" | t }}</h3>
+<section class="section">
+    <div class="section__content constrain">
+        <h3 class="heading">{{ "Further reading" | t }}</h3>
 
-        <ul class="grid">
-        {% for item in contentItems %}
-            <li class="grid__item">
-                {{ item | shape_build_display: "Summary" | shape_render }}
-            </li>
-        {% endfor %}
-        </ul>
+        <div class="content-feed">
+            <div class="content-feed__list content-feed__list--two-cols columns--two">
+                {% for item in contentItems %}
+                    <div class="content-feed__item">
+                        {{ item | shape_build_display: "Summary" | shape_render }}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </section>
 {% endif %}
