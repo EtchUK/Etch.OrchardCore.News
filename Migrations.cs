@@ -31,9 +31,9 @@ namespace Etch.OrchardCore.News
             return 1;
         }
 
-        public int UpdateFrom1()
+        public async Task<int> UpdateFrom1Async()
         {
-            _contentDefinitionManager.AlterPartDefinition("NewsPost", builder => builder
+            await _contentDefinitionManager.AlterPartDefinitionAsync("NewsPost", builder => builder
                 .WithField("Tags", field => field
                     .WithSettings(new LuceneContentIndexSettings
                     {
