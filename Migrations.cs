@@ -48,7 +48,7 @@ namespace Etch.OrchardCore.News
             return 2;
         }
 
-        public async Task<int> UpdateFrom2()
+        public async Task<int> UpdateFrom2Async()
         {
             await _queryManager.SaveQueryAsync("ContentByTags", new LuceneQuery
             {
